@@ -1,0 +1,113 @@
+header {
+  background-color: var(--primary-background);
+  height: 6em;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  user-select: none;
+}
+
+header > * {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  border: 1px solid var(--primary-highlight);
+  border-radius: 5px;
+  padding: 1%;
+  transition: background-color 0.3s ease;
+}
+
+.logo:hover {
+  background-color: black;
+  cursor: not-allowed;
+}
+
+.logo > img {
+  width: 90%;
+}
+
+nav > ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul > li {
+  text-decoration: none;
+  gap: 10%;
+  display: inline-block;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6em;
+  padding: 10% 20%;
+  transition: transform 0.3s ease;
+}
+
+nav > ul > li > a:hover {
+  background-color: var(--secondary-background);
+  transform: scale(1.1);
+}
+
+.login > * {
+  margin: 2%;
+}
+
+.login > h1 {
+  font-family: 'Anton SC', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+  color: white;
+}
+
+.login > a {
+  font-size: 1.6em;
+  border: 1px solid white;
+  transition: transform 0.1s ease;
+  padding: 1%;
+}
+
+.login > a:first-child {
+  background-color: #2ecc71;
+}
+
+.login > a:hover {
+  transform: scale(1.1);
+}
+
+.categoryMenu {
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  visibility: hidden;
+  overflow: hidden;
+  padding-left: 1%;
+  border-right: 1px solid white;
+}
+
+.categoryMenu > a {
+  font-size: 90%;
+  display: block;
+  transition: transform 0.1s linear;
+  padding-left: 100%;
+  padding-right: 10%;
+}
+.categoryMenu > a + a {
+  margin-top: 5%;
+}
+
+.categoryMenu > a:hover {
+  transform: scale(1.1);
+}
+
+.categoryMenuOpen {
+  visibility: visible;
+}

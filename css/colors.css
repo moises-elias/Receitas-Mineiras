@@ -1,0 +1,6 @@
+:root {
+  --primary-background: #121212; /* Cor primária para o fundo do header e footer (cinza escuro) */
+  --secondary-background: #1e1e1e; /* Cor secundária para o fundo do main (cinza mais escuro) */
+  --primary-highlight: #006400; /* Destaque Primário (verde escuro) */
+  --secondary-highlight: #4caf50; /* Destaque Secundário (verde claro) */
+}
